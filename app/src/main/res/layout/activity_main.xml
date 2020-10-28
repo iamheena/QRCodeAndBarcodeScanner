@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#A20EFF">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:gravity="center"
+    android:id="@+id/top">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QR Code And
+                 Barcode Scanner"
+        android:textColor="@color/colorWhite"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"/>
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:layout_marginTop="10dp">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp"
+            android:id="@+id/card"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="@android:color/white">
+        <RelativeLayout
+            android:id="@+id/main_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="40dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/qr"
+                android:padding="15dp"
+                android:background="#A20EFF"
+                android:id="@+id/btnscan"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="40dp"
+                android:gravity="left">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/hi"
+                    android:id="@+id/btnhistory"
+                    android:background="#A20EFF"/>
+            </LinearLayout>
+        </LinearLayout>
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+   <!--<ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/btnscan"
+       android:text="Scann"
+       android:src="@drawable/ic_qrcode"
+       android:layout_centerInParent="true"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:id="@+id/btnhistory"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/btnscan"/>-->
+
+</RelativeLayout>
